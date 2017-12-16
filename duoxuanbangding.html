@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="vue.js"></script>
+    <title>表单单选及多选绑定</title>
+</head>
+<body>
+<div id="app">
+    <input type="checkbox" v-model="arr" value="吃">{{arr}}
+    <input type="checkbox" v-model="arr" value="喝">{{arr}}
+    <input type="checkbox" v-model="arr" value="拉">{{arr}}
+    <input type="checkbox" v-model="arr" value="睡">{{arr}}
+
+
+    <input type="radio" v-model="val" value="单选">{{val}}
+</div>
+</body>
+</html>
+<script>
+    var app=new Vue({
+        el:'#app',
+        data:{
+            arr:[],
+            val:false
+        }
+    })
+</script>
